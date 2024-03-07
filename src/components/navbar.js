@@ -1,25 +1,36 @@
 // start type rfce and hit tab to get the template
-
-import React from "react";
-// import Logo from "../FemputerCodes.png";
+// the use state hook makes variables Reactive! It will re-render the component.
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
+import "../styles/Navbar.css";
 
-function navbar() {
+function Navbar() {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
     <nav className="navbar">
-      <ul>
+      <div className="links">
         <Link to="/">Home</Link>
         <Link to="/about">About Me</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/contact">Contact</Link>
-      </ul>
-
-      {/* <div className="navbarLeft">
-        <img src={Logo} alt="logo" />
+        <button class="menu-button">
+          <MenuIcon className="menu" onClick={toggleMenu} />
+        </button>
       </div>
-      <div className="navbarRight"></div> */}
+      <div className="hidden-links" id={openMenu ? "open" : "close"}>
+        <Link to="/">Home</Link>
+        <Link to="/about">About Me</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
     </nav>
   );
 }
 
-export default navbar;
+export default Navbar;
