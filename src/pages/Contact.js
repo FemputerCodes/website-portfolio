@@ -1,4 +1,5 @@
 import React from "react";
+import Form from "../components/Form";
 import "../styles/Contact.css";
 
 function Contact() {
@@ -9,6 +10,7 @@ function Contact() {
           Contact
         </span>
       </h2>
+      <Form />
     </div>
   );
 }

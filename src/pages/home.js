@@ -9,7 +9,7 @@ function Home() {
         <span style={{ color: "var(--blueviolet)", fontWeight: "500" }}>
           Meghan
         </span>
-        .<br></br>
+        .<br />
         I'm an aspiring web developer.
       </h1>
     </div>

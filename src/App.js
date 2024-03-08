@@ -23,7 +23,6 @@ function App() {
         <section id="contact">
           <Contact />
         </section>
-        {/* <Chatbot /> */}
       </main>
     </div>
   );
