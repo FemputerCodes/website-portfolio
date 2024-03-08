@@ -1,5 +1,5 @@
 .navbar .links {
-  background-color: var(--darkgray);
+  background-color: transparent;
   font-size: 20px;
   display: flex;
   flex-direction: row;

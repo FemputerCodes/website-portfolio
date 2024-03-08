@@ -16,9 +16,14 @@
 2. Run `npm install @mui/material @emotion/react @emotion/styled` in terminal to install the package
 3. Scroll to Icons and run `npm install @mui/icons-material` to install the icons library
 
+# Installing Parallax
+
+1. run `npm install @react-spring/parallax`;
+
 # Sources:
 
 https://legacy.reactjs.org/docs/getting-started.html
 https://mui.com/material-ui/material-icons/
 https://docs.web3forms.com/how-to-guides/js-frameworks/react-js
 https://www.smashingmagazine.com/2021/01/dialogflow-agent-react-application/
+https://www.freepik.com/free-vector/entrance-cave-mountain-with-empty-space_21427495.htm#fromView=search&page=1&position=1&uuid=120ebe4d-38b0-409c-826c-ef77522731c5
