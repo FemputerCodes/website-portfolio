@@ -19,7 +19,6 @@ function App() {
           <Route path="/contact" exact Component={Contact} />
         </Routes>
       </Router>
-      <h1>Welcome!</h1>
     </div>
   );
 }

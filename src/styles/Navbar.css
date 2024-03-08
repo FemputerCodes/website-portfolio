@@ -1,5 +1,6 @@
 .navbar .links {
   background-color: var(--black);
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -9,10 +10,11 @@
 
 .navbar .hidden-links {
   background-color: var(--black);
+  font-size: 20px;
   flex-direction: column;
   text-align: right;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: none;
 }
 

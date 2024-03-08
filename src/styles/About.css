@@ -1,0 +1,15 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.content-box {
+  padding: 0px 100px 10px 100px;
+}
+
+.content-box p {
+  /* font-size: 20px; */
+}
