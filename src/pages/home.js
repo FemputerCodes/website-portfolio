@@ -3,11 +3,15 @@ import "../styles/Home.css";
 
 function Home() {
   return (
-    <div id="welcome">
+    <div class="home-container">
       <h1>
-        Hi! I'm <span style={{ color: "blueviolet" }}>Meghan</span>.
+        Hello! I'm{" "}
+        <span style={{ color: "var(--blueviolet)", fontWeight: "500" }}>
+          Meghan
+        </span>
+        .<br></br>
+        I'm an aspiring web developer.
       </h1>
-      <h1>I'm an aspiring web developer.</h1>
     </div>
   );
 }

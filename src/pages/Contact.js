@@ -1,9 +1,14 @@
 import React from "react";
+import "../styles/Contact.css";
 
 function Contact() {
   return (
-    <div>
-      <h2>Contact</h2>
+    <div id="contact">
+      <h2>
+        <span style={{ color: "var(--blueviolet)", fontWeight: "500" }}>
+          Contact
+        </span>
+      </h2>
     </div>
   );
 }
