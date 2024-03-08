@@ -9,7 +9,13 @@ function Chatbot() {
   };
 
   return (
-    <button className="chatbot" onClick={toggleChatbot}>
+    <button
+      className="chatbot-button"
+      aria-label="Chatbot Button"
+      onClick={toggleChatbot}
+    >
+      {" "}
+      chat
       <iframe
         id={openBot ? "open" : "close"}
         title="DialogFlow ChatBot"

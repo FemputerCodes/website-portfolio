@@ -20,3 +20,5 @@
 
 https://legacy.reactjs.org/docs/getting-started.html
 https://mui.com/material-ui/material-icons/
+https://docs.web3forms.com/how-to-guides/js-frameworks/react-js
+https://www.smashingmagazine.com/2021/01/dialogflow-agent-react-application/

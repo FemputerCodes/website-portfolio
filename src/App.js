@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-// import Chatbot from "./components/Chatbot";
+import Chatbot from "./components/Chatbot";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
         <section id="contact">
           <Contact />
         </section>
+        <Chatbot />
       </main>
     </div>
   );
