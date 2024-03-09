@@ -30,16 +30,31 @@ function Form() {
   return (
     <div className="form-container">
       <form onSubmit={onSubmit}>
-        <label htmlFor="name">Name</label>
-        <input type="text" name="name" placeholder="name" required />
-        <label htmlFor="email">Email</label>
-        <input type="email" name="email" placeholder="email" required />
-        <label htmlFor="message">Message</label>
-        <textarea rows="6" name="message" placeholder="message" required />
+        <input
+          type="text"
+          name="name"
+          placeholder="name"
+          aria-label="name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="email"
+          aria-label="email"
+          required
+        />
+        <textarea
+          rows="6"
+          name="message"
+          placeholder="message"
+          aria-label="message"
+          required
+        />
         <button className="submit" type="submit">
           Send Message
         </button>
-        <span style={{ fontSize: "14px" }}>{result}</span>
+        <span style={{ fontSize: "14px", textAlign: "center" }}>{result}</span>
       </form>
     </div>
   );

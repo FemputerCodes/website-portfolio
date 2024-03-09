@@ -11,7 +11,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 function App() {
   return (
     <div className="App">
-      <Parallax pages={4}>
+      <Parallax pages={5}>
         <Background />
         <ParallaxLayer offset={0} speed={2}>
           <section id="home">
@@ -19,17 +19,15 @@ function App() {
           </section>
         </ParallaxLayer>
         <ParallaxLayer offset={1}>
-          <main>
-            <section id="about">
-              <About />
-            </section>
-            <section id="projects">
-              <Projects />
-            </section>
-            <section id="contact">
-              <Contact />
-            </section>
-          </main>
+          <section id="about">
+            <About />
+          </section>
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
         </ParallaxLayer>
       </Parallax>
       <Navbar />
