@@ -30,8 +30,12 @@ function App() {
           </section>
         </ParallaxLayer>
       </Parallax>
-      <Navbar />
-      <Chatbot />
+      <header>
+        <Navbar />
+      </header>
+      <footer>
+        <Chatbot />
+      </footer>
     </div>
   );
 }
