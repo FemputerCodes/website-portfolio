@@ -20,6 +20,10 @@
 
 1. run `npm install @react-spring/parallax`;
 
+# Changing the website title
+
+1. Install react-helmet by running `npm install --save react-helmet`
+
 # Sources:
 
 https://legacy.reactjs.org/docs/getting-started.html

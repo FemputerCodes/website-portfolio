@@ -7,10 +7,17 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Chatbot from "./components/Chatbot";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>FemputerCodes</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+        <meta name="description" content="My Website" />
+      </Helmet>
       <Parallax pages={5}>
         <Background />
         <ParallaxLayer offset={0} speed={2}>
