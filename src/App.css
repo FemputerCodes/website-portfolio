@@ -10,15 +10,18 @@
   --font-weight: 350;
   --font-size: 2.4em;
 }
+
 h1 {
   font-weight: var(--font-weight);
   margin: 0px;
 }
+
 h2 {
   font-weight: var(--font-weight);
   margin-top: 40px;
   margin-bottom: 5px;
 }
+
 .App {
   background-color: var(--black);
   color: var(--white);
@@ -32,9 +35,46 @@ h2 {
 }
 
 body {
-  background-color: var(--black);
   padding: 0;
   margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px; /* how big is our z axis */
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.stars {
+  background: linear-gradient(#000000, #000033, #3d0099, #e6ccff);
+  position: absolute;
+  top: 0px;
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateZ(-10px) scale(2);
+}
+
+.cave-entrance {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateZ(-5px) scale(1.5);
 }
 
 section {

@@ -1,12 +1,12 @@
 import "./App.css";
-import Background from "./components/Background";
+import caveEntrance from "./assets/CaveEntrance_Long.png";
+import stars from "./assets/Stars.png";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Chatbot from "./components/Chatbot";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Helmet } from "react-helmet";
 
 function App() {
@@ -18,26 +18,34 @@ function App() {
         <link rel="canonical" href="http://mysite.com/example" />
         <meta name="description" content="My Website" />
       </Helmet>
-      <Parallax pages={5}>
-        <Background />
-        <ParallaxLayer offset={0} speed={2}>
+      <Navbar />
+      <div className="wrapper">
+        <header>
+          <img src={stars} className="stars" alt="Stars" />
+          <img
+            src={caveEntrance}
+            className="cave-entrance"
+            alt="Cave Entrance"
+          />
+          <div
+            className="background"
+            style={{ background: "var(--black)" }}
+          ></div>
           <section id="home">
             <Home />
           </section>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1}>
-          <section id="about">
-            <About />
-          </section>
-          <section id="projects">
-            <Projects />
-          </section>
-          <section id="contact">
-            <Contact />
-          </section>
-        </ParallaxLayer>
-      </Parallax>
-      <Navbar />
+        </header>
+        <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </div>
+
       <Chatbot />
     </div>
   );
