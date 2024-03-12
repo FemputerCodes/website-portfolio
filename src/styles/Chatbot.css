@@ -32,3 +32,9 @@ iframe#open {
 iframe#close {
   display: none;
 }
+
+@media (max-width: 600px) {
+  .chatbot-button {
+    display: none;
+  }
+}
