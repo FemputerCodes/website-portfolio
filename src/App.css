@@ -23,7 +23,6 @@ h2 {
 }
 
 .App {
-  background-color: var(--black);
   color: var(--white);
   font-family: var(--font-family);
   font-weight: var(--font-weight);
@@ -35,6 +34,8 @@ h2 {
 }
 
 body {
+  background: linear-gradient(#000000, #000033, #3d0099, #e6ccff);
+  min-height: 100vh;
   padding: 0;
   margin: 0;
 }
@@ -54,30 +55,37 @@ header {
   align-items: center;
   height: 100%;
   transform-style: preserve-3d;
-  z-index: -1;
+  z-index: 1;
 }
 
-.stars {
-  background: linear-gradient(#000000, #000033, #3d0099, #e6ccff);
-  position: absolute;
-  top: 0px;
-  height: 70%;
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
-  transform: translateZ(-10px) scale(2);
-}
-
+.stars,
 .cave-entrance {
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   object-fit: cover;
-  z-index: -1;
-  transform: translateZ(-5px) scale(1.5);
+}
+
+.cave-entrance {
+  z-index: 10;
 }
 
 section {
   margin-left: 100px;
   margin-right: 100px;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #000000, transparent);
+  z-index: 1;
+}
+main {
+  background-color: var(--black);
 }

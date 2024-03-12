@@ -27,23 +27,21 @@ function App() {
             className="cave-entrance"
             alt="Cave Entrance"
           />
-          <div
-            className="background"
-            style={{ background: "var(--black)" }}
-          ></div>
           <section id="home">
             <Home />
           </section>
         </header>
-        <section id="about">
-          <About />
-        </section>
-        <section id="projects">
-          <Projects />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
+        <main>
+          <section id="about">
+            <About />
+          </section>
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
+        </main>
       </div>
 
       <Chatbot />
