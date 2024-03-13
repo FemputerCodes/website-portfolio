@@ -1,6 +1,4 @@
 import "./App.css";
-import caveEntrance from "./assets/CaveEntrance_Long.png";
-import stars from "./assets/Stars.png";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -20,17 +18,7 @@ function App() {
       </Helmet>
       <Navbar />
       <div className="wrapper">
-        <header>
-          <img src={stars} className="stars" alt="Stars" />
-          <img
-            src={caveEntrance}
-            className="cave-entrance"
-            alt="Cave Entrance"
-          />
-          <section id="home">
-            <Home />
-          </section>
-        </header>
+        <Home />
         <main>
           <section id="about">
             <About />
@@ -43,7 +31,6 @@ function App() {
           </section>
         </main>
       </div>
-
       <Chatbot />
     </div>
   );

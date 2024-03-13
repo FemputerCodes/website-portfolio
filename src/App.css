@@ -8,7 +8,7 @@
 
   --font-family: "Montserrat", sans-serif;
   --font-weight: 350;
-  --font-size: 2.4em;
+  --font-size: 1.8em;
 }
 
 h1 {
@@ -34,42 +34,15 @@ h2 {
 }
 
 body {
-  background: linear-gradient(#000000, #000033, #3d0099, #e6ccff);
+  background: linear-gradient(
+    #000000 10%,
+    #000033 30%,
+    #3d0099 50%,
+    #e6ccff 70%
+  );
   min-height: 100vh;
   padding: 0;
   margin: 0;
-}
-
-.wrapper {
-  position: relative;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px; /* how big is our z axis */
-}
-
-header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transform-style: preserve-3d;
-  z-index: 1;
-}
-
-.stars,
-.cave-entrance {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.cave-entrance {
-  z-index: 10;
 }
 
 section {
@@ -77,15 +50,13 @@ section {
   margin-right: 100px;
 }
 
-main::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(to top, #000000, transparent);
-  z-index: 1;
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px; /* how big is our z axis */
 }
+
 main {
   background-color: var(--black);
 }

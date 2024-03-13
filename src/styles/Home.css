@@ -1,5 +1,27 @@
-.home-container {
-  box-sizing: border-box;
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  perspective: preserve-3d;
+  overflow: hidden;
+  perspective: 10px;
+}
+
+.stars,
+.cave-entrance {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1000;
+}
+
+.title-container {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,4 +30,6 @@
   text-shadow: 0 0 5px var(--black);
   height: 100vh;
   width: 100%;
+  z-index: 9;
+  /* transform: translateZ(-50px); */
 }
