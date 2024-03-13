@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 #home .stars {
@@ -25,7 +25,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
   overflow: hidden;
 }
@@ -49,4 +49,10 @@
   margin: 0;
   margin-bottom: 100px;
   z-index: 0;
+}
+
+@media (max-width: 600px) {
+  #home .title-container #title {
+    font-size: 1em;
+  }
 }
