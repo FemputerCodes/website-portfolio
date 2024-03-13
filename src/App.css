@@ -44,7 +44,7 @@ body {
 
 main {
   background: var(--black);
-  /* z-index: 7; */
+  z-index: 7;
 }
 
 section {

@@ -15,7 +15,7 @@ function Home() {
     // console.log("scroll position: ", scrollPosition);
     // if (window.innerWidth > 768) {
     refSky.current.style.left = `${-scrollPosition * 0.08}px`;
-    refTitle.current.style.marginTop = `${scrollPosition * 1.1}px`;
+    refTitle.current.style.marginTop = `${-scrollPosition * 0.8}px`;
     // } else {
     // refTitle.current.style.marginTop = `${scrollPosition * 1.1}px`;
     // }
