@@ -16,9 +16,10 @@ function Home() {
     if (window.innerWidth > 768) {
       refSky.current.style.top = `${scrollPosition}px`;
       refSky.current.style.left = `${scrollPosition * -0.08}px`;
-      refTitle.current.style.top = `${scrollPosition}px`;
+      refCave.current.style.top = `${scrollPosition}px`;
       refTitle.current.style.marginTop = `${scrollPosition}px`;
     }
+    refCave.current.style.top = `${scrollPosition}px`;
     refTitle.current.style.marginTop = `${scrollPosition}px`;
   };
 
