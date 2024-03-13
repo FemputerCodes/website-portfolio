@@ -37,8 +37,8 @@ function Home() {
         alt="Cave Entrance"
         ref={refCave}
       />
-      <div className="title-container" ref={refTitle}>
-        <h1 id="title">
+      <div className="title-container">
+        <h1 id="title" ref={refTitle}>
           Hello! I'm{" "}
           <span style={{ color: "var(--blueviolet)", fontWeight: "500" }}>
             Meghan
