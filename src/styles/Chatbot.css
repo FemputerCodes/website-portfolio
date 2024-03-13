@@ -10,7 +10,7 @@
   text-decoration: none;
   margin: 25px;
   padding: 0px;
-  z-index: 10;
+  z-index: 9;
 }
 
 .chatbot-button:hover {

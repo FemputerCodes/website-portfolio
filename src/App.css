@@ -34,12 +34,12 @@ main::before {
   height: 90px;
   background: white;
   background: linear-gradient(to top, var(--black), var(--black));
-  z-index: 9;
+  z-index: 8;
 }
 
 main {
   background: var(--black);
-  z-index: 8;
+  z-index: 7;
 }
 
 section {
