@@ -13,14 +13,12 @@ function Home() {
     const scrollPosition = window.scrollY;
     setScrollPosition(scrollPosition);
     // console.log("scroll position: ", scrollPosition);
-    // if (window.innerWidth > 768) {
-    refSky.current.style.left = `${scrollPosition * -0.08}px`;
-    refTitle.current.style.marginTop = `${scrollPosition}px`;
-    // }
-    // } else {
-    //   //   refSky.current.style.left = `${scrollPosition * -0.08}px`;
-    //   refTitle.current.style.marginTop = `${scrollPosition}px`;
-    // }
+    if (window.innerWidth > 768) {
+      refSky.current.style.left = `${scrollPosition * -0.08}px`;
+      refTitle.current.style.marginTop = `${scrollPosition}px`;
+    } else {
+      refTitle.current.style.marginTop = `${scrollPosition}px`;
+    }
   };
 
   useEffect(() => {
