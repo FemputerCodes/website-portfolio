@@ -5,7 +5,7 @@
   --darkgray: #262626;
   --lightgray: #a3a3c2;
   --blueviolet: #aa80ff;
-
+  --font-weight: 350;
   --font-family: "Montserrat", sans-serif;
   --font-size: 26px;
 }
@@ -30,6 +30,7 @@ main {
   background-color: var(--black);
   padding-left: 100px;
   padding-right: 100px;
+  margin: 0;
 }
 
 h2 {

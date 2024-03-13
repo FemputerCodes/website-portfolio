@@ -17,6 +17,7 @@ function Home() {
       refSky.current.style.left = `${scrollPosition * -0.08}px`;
       refTitle.current.style.marginTop = `${scrollPosition}px`;
     }
+    refTitle.current.style.marginTop = `${scrollPosition}px`;
   };
 
   useEffect(() => {

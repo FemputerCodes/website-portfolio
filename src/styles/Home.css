@@ -43,7 +43,7 @@
 }
 
 #home .title-container #title {
-  font-weight: 350;
+  font-weight: var(--font-weight);
   font-size: 1.8em;
   text-align: center;
   text-shadow: 0 0 5px var(--black);
