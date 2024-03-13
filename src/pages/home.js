@@ -12,13 +12,15 @@ function Home() {
     const scrollPosition = window.scrollY;
     setScrollPosition(scrollPosition);
     // console.log("scroll position: ", scrollPosition);
-    refSky.current.style.top = `${scrollPosition}px`;
-    refSky.current.style.left = `${scrollPosition * -0.08}px`;
-    refTitle.current.style.marginTop = `${scrollPosition}px`;
+    if (window.innerWidth > 768) {
+      refSky.current.style.top = `${scrollPosition}px`;
+      refSky.current.style.left = `${scrollPosition * -0.08}px`;
+      refTitle.current.style.marginTop = `${scrollPosition}px`;
+    }
   };
 
   useEffect(() => {
-    console.log("useEffect is running");
+    // console.log("useEffect is running");
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
