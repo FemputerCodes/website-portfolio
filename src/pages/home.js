@@ -7,27 +7,27 @@ function Home() {
   const refSky = useRef(null);
   const refCave = useRef(null);
   const refTitle = useRef(null);
-  // const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
-  // const handleScroll = () => {
-  //   const scrollPosition = window.scrollY;
-  //   setScrollPosition(scrollPosition);
-  //   // console.log("scroll position: ", scrollPosition);
-  //   if (window.innerWidth > 768) {
-  //     refSky.current.style.top = `${scrollPosition}px`;
-  //     refSky.current.style.left = `${scrollPosition * -0.08}px`;
-  //     refTitle.current.style.marginTop = `${scrollPosition}px`;
-  //   }
-  //   refTitle.current.style.marginTop = `${scrollPosition}px`;
-  // };
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    setScrollPosition(scrollPosition);
+    // console.log("scroll position: ", scrollPosition);
+    if (window.innerWidth > 768) {
+      refSky.current.style.top = `${scrollPosition}px`;
+      refSky.current.style.left = `${scrollPosition * -0.08}px`;
+      refTitle.current.style.marginTop = `${scrollPosition}px`;
+    }
+    // refTitle.current.style.marginTop = `${scrollPosition}px`;
+  };
 
-  // useEffect(() => {
-  //   // console.log("useEffect is running");
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, [scrollPosition]);
+  useEffect(() => {
+    // console.log("useEffect is running");
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
   return (
     <section id="home">
       <img src={stars} className="stars" alt="Stars" ref={refSky} />
