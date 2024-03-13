@@ -14,3 +14,21 @@
 .about-content-box p {
   font-size: 0.8em;
 }
+
+@media (max-width: 600px) {
+  #about {
+    padding: 0;
+    top: 0;
+    margin: 20px;
+  }
+
+  #about h1 {
+    font-size: 0.8em;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+  .about-content-box p {
+    font-size: 0.6em;
+  }
+}
