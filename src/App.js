@@ -17,20 +17,18 @@ function App() {
         <meta name="description" content="My Website" />
       </Helmet>
       <Navbar />
-      <div className="wrapper">
-        <Home />
-        <main>
-          <section id="about">
-            <About />
-          </section>
-          <section id="projects">
-            <Projects />
-          </section>
-          <section id="contact">
-            <Contact />
-          </section>
-        </main>
-      </div>
+      <Home />
+      <main>
+        <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
       <Chatbot />
     </div>
   );

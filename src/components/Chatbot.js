@@ -10,6 +10,7 @@ function Chatbot() {
 
   return (
     <button
+      id="chatbot"
       className="chatbot-button"
       aria-label="Chatbot Button"
       onClick={toggleChatbot}

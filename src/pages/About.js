@@ -4,12 +4,12 @@ import "../styles/About.css";
 function About() {
   return (
     <div id="about">
-      <h2>
+      <h1>
         <span style={{ color: "var(--blueviolet)", fontWeight: "500" }}>
           About Me
         </span>
-      </h2>
-      <div class="content-box">
+      </h1>
+      <div class="about-content-box">
         <p>
           Fromage frais cheddar the big cheese. Chalk and cheese fondue
           dolcelatte feta ricotta port-salut airedale edam. Taleggio smelly

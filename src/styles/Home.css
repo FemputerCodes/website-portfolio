@@ -1,35 +1,49 @@
-header {
-  position: relative;
+#home {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  perspective: preserve-3d;
-  overflow: hidden;
-  perspective: 10px;
 }
 
-.stars,
-.cave-entrance {
+#home .stars {
+  background: linear-gradient(
+    #000000 10%,
+    #000033 30%,
+    #3d0099 55%,
+    #e6ccff 80%
+  );
+  z-index: -3;
+}
+
+#home .cave-entrance {
+  z-index: -1;
+}
+
+#home .stars,
+#home .cave-entrance {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1000;
 }
 
-.title-container {
-  position: absolute;
+#home .title-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  text-shadow: 0 0 5px var(--black);
   height: 100vh;
   width: 100%;
-  z-index: 9;
-  /* transform: translateZ(-50px); */
+  z-index: -2;
+}
+
+#home .title-container #title {
+  font-weight: 350;
+  font-size: 1.8em;
+  text-align: center;
+  text-shadow: 0 0 5px var(--black);
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 100px;
 }

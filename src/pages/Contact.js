@@ -5,11 +5,11 @@ import "../styles/Contact.css";
 function Contact() {
   return (
     <div id="contact">
-      <h2>
+      <h1>
         <span style={{ color: "var(--blueviolet)", fontWeight: "500" }}>
           Contact
         </span>
-      </h2>
+      </h1>
       <Form />
     </div>
   );

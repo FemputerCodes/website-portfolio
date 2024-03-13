@@ -5,6 +5,12 @@
   padding: 30px;
 }
 
-.content-box p {
-  font-size: 20px;
+#projects h1 {
+  font-size: 1.6em;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.projects-content-box p {
+  font-size: 0.8em;
 }
