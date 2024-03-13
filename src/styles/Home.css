@@ -15,11 +15,11 @@
     #3d0099 55%,
     #e6ccff 80%
   );
-  z-index: -3;
+  z-index: -2;
 }
 
 #home .cave-entrance {
-  z-index: -1;
+  z-index: 9;
 }
 
 #home .stars,
@@ -39,7 +39,7 @@
   align-items: center;
   height: 100vh;
   width: 100%;
-  z-index: -2;
+  z-index: 0;
 }
 
 #home .title-container #title {
