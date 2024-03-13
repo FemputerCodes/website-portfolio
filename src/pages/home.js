@@ -5,6 +5,7 @@ import "../styles/Home.css";
 
 function Home() {
   const refSky = useRef(null);
+  const refCave = useRef(null);
   const refTitle = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -15,6 +16,7 @@ function Home() {
     if (window.innerWidth > 768) {
       refSky.current.style.top = `${scrollPosition}px`;
       refSky.current.style.left = `${scrollPosition * -0.08}px`;
+      refTitle.current.style.top = `${scrollPosition}px`;
       refTitle.current.style.marginTop = `${scrollPosition}px`;
     }
     refTitle.current.style.marginTop = `${scrollPosition}px`;
@@ -30,7 +32,12 @@ function Home() {
   return (
     <section id="home">
       <img src={stars} className="stars" alt="Stars" ref={refSky} />
-      <img src={caveEntrance} className="cave-entrance" alt="Cave Entrance" />
+      <img
+        src={caveEntrance}
+        className="cave-entrance"
+        alt="Cave Entrance"
+        ref={refCave}
+      />
       <div className="title-container" ref={refTitle}>
         <h1 id="title">
           Hello! I'm{" "}
