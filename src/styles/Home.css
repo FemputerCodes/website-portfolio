@@ -1,11 +1,10 @@
 #home {
-  background: linear-gradient(
+  /* background: linear-gradient(
     #000000 10%,
     #000033 30%,
     #3d0099 55%,
-    #e6ccff 80%,
-    #000000 100%
-  );
+    #e6ccff 80%
+  ); */
   display: flex;
   justify-content: center;
   align-items: center;
