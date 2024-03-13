@@ -13,12 +13,10 @@
     #e6ccff 80%
   );
   z-index: -1;
-  height: 80%;
 }
 
 #home .cave-entrance {
   z-index: 8;
-  height: 100%;
 }
 
 #home .stars,
@@ -26,6 +24,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 100%;
   object-fit: cover;
   overflow: hidden;
 }
