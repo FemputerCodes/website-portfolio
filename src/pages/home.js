@@ -5,20 +5,19 @@ import "../styles/Home.css";
 
 function Home() {
   const refSky = useRef(null);
-  const refCave = useRef(null);
+  const refStars = useRef(null);
   const refTitle = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     setScrollPosition(scrollPosition);
-    // console.log("scroll position: ", scrollPosition);
-    refSky.current.style.left = `${-scrollPosition * 0.08}px`;
+    refSky.current.style.top = `${scrollPosition * 0.5}px`;
+    refStars.current.style.right = `${scrollPosition * 0.08}px`;
     refTitle.current.style.marginTop = `${scrollPosition * 0.8}px`;
   };
 
   useEffect(() => {
-    // console.log("useEffect is running");
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -26,13 +25,9 @@ function Home() {
   }, [scrollPosition]);
   return (
     <section id="home">
-      <img src={stars} className="stars" alt="Stars" ref={refSky} />
-      <img
-        src={caveEntrance}
-        className="cave-entrance"
-        alt="Cave Entrance"
-        ref={refCave}
-      />
+      <div className="sky" alt="Sky" ref={refSky}></div>
+      <img src={stars} className="stars" alt="Stars" ref={refStars} />
+      <img src={caveEntrance} className="cave-entrance" alt="Cave Entrance" />
       <div className="title-container">
         <h1 id="title" ref={refTitle}>
           Hello! I'm{" "}
