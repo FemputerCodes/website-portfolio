@@ -32,7 +32,8 @@ main::before {
   position: absolute;
   width: 100%;
   height: 90px;
-  background: linear-gradient(to top, #060409, var(--black) transparent);
+  /* background: linear-gradient(to top, #060409, var(--black)); */
+  background: linear-gradient(to top, var(--black), transparent);
 }
 
 main {
