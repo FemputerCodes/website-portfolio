@@ -13,9 +13,7 @@ function Home() {
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     setScrollPosition(scrollPosition);
-    refSky.current.style.marginTop = `${scrollPosition}px`;
-    refSky.current.style.marinBottom = `${scrollPosition * 0.8}px`;
-    // refSky.current.style.bottom = `${scrollPosition * 0.2}px`;
+    refSky.current.style.bottom = `${scrollPosition * 0.2}px`;
     refStars.current.style.right = `${scrollPosition * 0.08}px`;
     refTitle.current.style.marginTop = `${scrollPosition * 0.8}px`;
   };
