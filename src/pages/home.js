@@ -6,13 +6,16 @@ import "../styles/Home.css";
 function Home() {
   const refSky = useRef(null);
   const refStars = useRef(null);
+  const refCave = useRef(null);
   const refTitle = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     setScrollPosition(scrollPosition);
-    refSky.current.style.top = `${scrollPosition * 0.5}px`;
+    refSky.current.style.marginTop = `${scrollPosition}px`;
+    refSky.current.style.marinBottom = `${scrollPosition * 0.8}px`;
+    // refSky.current.style.bottom = `${scrollPosition * 0.2}px`;
     refStars.current.style.right = `${scrollPosition * 0.08}px`;
     refTitle.current.style.marginTop = `${scrollPosition * 0.8}px`;
   };
@@ -27,7 +30,12 @@ function Home() {
     <section id="home">
       <div className="sky" alt="Sky" ref={refSky}></div>
       <img src={stars} className="stars" alt="Stars" ref={refStars} />
-      <img src={caveEntrance} className="cave-entrance" alt="Cave Entrance" />
+      <img
+        src={caveEntrance}
+        className="cave-entrance"
+        alt="Cave Entrance"
+        ref={refCave}
+      />
       <div className="title-container">
         <h1 id="title" ref={refTitle}>
           Hello! I'm{" "}
