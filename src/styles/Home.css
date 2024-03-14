@@ -12,12 +12,12 @@
   background: linear-gradient(
     #000000 10%,
     #000033 30%,
-    #3d0099 55%,
-    #e6ccff 80%
+    #3d0099 60%,
+    #e6ccff 100%
   );
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 80%;
   z-index: -1;
 }
 
