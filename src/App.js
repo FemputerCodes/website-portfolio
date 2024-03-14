@@ -18,7 +18,7 @@ function App() {
       </Helmet>
       <Navbar />
       <Home />
-      <main>
+      <section className="main">
         <section id="about">
           <About />
         </section>
@@ -28,7 +28,7 @@ function App() {
         <section id="contact">
           <Contact />
         </section>
-      </main>
+      </section>
       <Chatbot />
     </div>
   );
