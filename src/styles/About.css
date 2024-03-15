@@ -13,11 +13,115 @@
   margin-bottom: 5px;
 }
 
-.about-content-box p {
-  font-size: 0.8em;
+.about-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
 }
 
-@media (max-width: 600px) {
+.about-content {
+  font-size: 0.8em;
+  position: relative;
+  width: 60%;
+  height: 100%;
+}
+
+.hexagon-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 16px;
+}
+
+.hex-col1,
+.hex-col2,
+.hex-col3 {
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9 {
+  color: white;
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+}
+
+.hex {
+  position: absolute;
+  background: blueviolet;
+  border-radius: 3px;
+  width: 85%;
+  height: var(--height);
+  z-index: -1;
+  transform: rotate(60deg);
+}
+
+.hex::before,
+.hex::after {
+  background: inherit;
+  border-radius: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hex::before {
+  transform: rotate(60deg);
+}
+
+.hex::after {
+  transform: rotate(-60deg);
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover,
+.item5:hover,
+.item6:hover,
+.item7:hover,
+.item8:hover,
+.item9:hover {
+  .hex,
+  .hex::before,
+  .hex::after {
+    background: #41166d;
+  }
+}
+
+@media (max-width: 1346px) and (min-width: 801px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-content {
+    font-size: 0.6em;
+    width: 100%;
+  }
+
+  .hexagon-grid {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
   #about {
     padding: 0;
     top: 0;
@@ -28,7 +132,29 @@
     font-size: 0.8em;
   }
 
-  .about-content-box p {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-content {
     font-size: 0.6em;
+    width: 100%;
+  }
+  .hexagon-grid {
+    font-size: 0.4em;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8,
+  .item9 {
+    width: 80px;
+    height: 80px;
   }
 }
