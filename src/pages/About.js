@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/About.css";
 
 function About() {
+  useEffect(() => {
+    function updateHexagon(hexagon) {
+      console.log("update hexagon function");
+      const width = hexagon.clientWidth;
+      const height = width * 0.5769;
+      hexagon.style.setProperty("--height", `${height}px`);
+      console.log("hexagon width: ", width);
+      console.log("hexagon height: ", height);
+    }
+    function handleResize() {
+      document.querySelectorAll(".hex").forEach(updateHexagon);
+    }
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div id="about">
       <h1>
@@ -9,43 +30,61 @@ function About() {
           About Me
         </span>
       </h1>
-      <div class="about-content-box">
-        <p>
-          Fromage frais cheddar the big cheese. Chalk and cheese fondue
-          dolcelatte feta ricotta port-salut airedale edam. Taleggio smelly
-          cheese cow croque monsieur bocconcini ricotta roquefort cow.
-          Cheesecake stilton red leicester cut the cheese cheesecake mozzarella
-          goat cheesy grin. Squirty cheese hard cheese bocconcini queso.
-        </p>
-        <p>
-          Camembert de normandie st. agur blue cheese stinking bishop. Blue
-          castello cheese strings cheese triangles dolcelatte camembert de
-          normandie say cheese boursin babybel. Gouda babybel swiss when the
-          cheese comes out everybody's happy everyone loves port-salut queso st.
-          agur blue cheese. Bavarian bergkase roquefort fromage cheesy feet
-          smelly cheese.
-        </p>
-        <p>
-          Halloumi cheese triangles cheesecake. Croque monsieur lancashire swiss
-          babybel airedale ricotta mascarpone fromage. Cow stilton taleggio brie
-          lancashire feta feta babybel. Gouda caerphilly fromage when the cheese
-          comes out everybody's happy.
-        </p>
-        <p>
-          Feta gouda mascarpone. Cut the cheese bavarian bergkase who moved my
-          cheese fromage jarlsberg who moved my cheese cheeseburger taleggio.
-          Halloumi when the cheese comes out everybody's happy roquefort fromage
-          frais stilton cheese and wine cheese and biscuits parmesan. Cheese
-          strings cheese and biscuits.
-        </p>
-        <p>
-          Camembert de normandie st. agur blue cheese stinking bishop. Blue
-          castello cheese strings cheese triangles dolcelatte camembert de
-          normandie say cheese boursin babybel. Gouda babybel swiss when the
-          cheese comes out everybody's happy everyone loves port-salut queso st.
-          agur blue cheese. Bavarian bergkase roquefort fromage cheesy feet
-          smelly cheese.
-        </p>
+      <div class="about-container">
+        <div class="about-content">
+          <p>
+            Fromage frais cheddar the big cheese. Chalk and cheese fondue
+            dolcelatte feta ricotta port-salut airedale edam. Taleggio smelly
+            cheese cow croque monsieur bocconcini ricotta roquefort cow.
+            Cheesecake stilton red leicester cut the cheese cheesecake
+            mozzarella goat cheesy grin. Squirty cheese hard cheese bocconcini
+            queso.
+          </p>
+          <p>
+            Fromage frais cheddar the big cheese. Chalk and cheese fondue
+            dolcelatte feta ricotta port-salut airedale edam. Taleggio smelly
+            cheese cow croque monsieur bocconcini ricotta roquefort cow.
+            Cheesecake stilton red leicester cut the cheese cheesecake
+            mozzarella goat cheesy grin. Squirty cheese hard cheese bocconcini
+            queso.
+          </p>
+        </div>
+        <div class="hexagon-grid">
+          <div class="hex-col1">
+            <div class="item1">
+              HTML
+              <div class="hex"></div>
+            </div>
+            <div class="item2">
+              C++
+              <div class="hex"></div>
+            </div>
+          </div>
+          <div class="hex-col2">
+            <div class="item3">
+              Python
+              <div class="hex"></div>
+            </div>
+            <div class="item4">
+              CSS
+              <div class="hex"></div>
+            </div>
+            <div class="item5">
+              GIT
+              <div class="hex"></div>
+            </div>
+          </div>
+          <div class="hex-col3">
+            <div class="item6">
+              JAVASCRIPT
+              <div class="hex"></div>
+            </div>
+            <div class="item7">
+              SQL
+              <div class="hex"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
