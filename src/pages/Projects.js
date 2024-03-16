@@ -11,12 +11,14 @@ function Projects() {
       </h1>
       <div class="projects-content-box">
         <h2>Sudoku</h2>
-
+        <div>
+          <a href="https://femputercodes.github.io/sudoku/build/web/">PLAY</a>
+        </div>
+        <div>
+          <a href="https://github.com/FemputerCodes/sudoku">Learn More</a>
+        </div>
         <p>
-          Halloumi cheese triangles cheesecake. Croque monsieur lancashire swiss
-          babybel airedale ricotta mascarpone fromage. Cow stilton taleggio brie
-          lancashire feta feta babybel. Gouda caerphilly fromage when the cheese
-          comes out everybody's happy.
+          Implemented in Python using Pygame. Deployed to the web with Pygbag.
         </p>
       </div>
     </div>

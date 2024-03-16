@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Chatbot from "./components/Chatbot";
+// import Chatbot from "./components/Chatbot";
 import { Helmet } from "react-helmet";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
           <Contact />
         </section>
       </section>
-      <Chatbot />
+      {/* <Chatbot /> */}
     </div>
   );
 }
