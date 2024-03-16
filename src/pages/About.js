@@ -1,4 +1,11 @@
 import React, { useEffect } from "react";
+import pythonIcon from "../assets/icons/python_icon.png";
+import htmlIcon from "../assets/icons/html_icon.png";
+import cssIcon from "../assets/icons/css_icon.png";
+import jsIcon from "../assets/icons/js_icon.png";
+import cppIcon from "../assets/icons/c++_icon.png";
+import gitIcon from "../assets/icons/git_icon.png";
+import sqlIcon from "../assets/icons/sql_icon.png";
 import "../styles/About.css";
 
 function About() {
@@ -52,35 +59,40 @@ function About() {
         <div class="hexagon-grid">
           <div class="hex-col1">
             <div class="item1">
-              HTML
+              <img src={htmlIcon} alt="html icon" />
               <div class="hex"></div>
             </div>
             <div class="item2">
-              C++
+              <img src={cppIcon} alt="cpp icon" />
               <div class="hex"></div>
             </div>
           </div>
           <div class="hex-col2">
             <div class="item3">
-              Python
+              <img
+                src={pythonIcon}
+                width="110"
+                style={{ objectFit: "cover" }}
+                alt="python icon"
+              />
               <div class="hex"></div>
             </div>
             <div class="item4">
-              CSS
+              <img src={cssIcon} alt="css icon" />
               <div class="hex"></div>
             </div>
             <div class="item5">
-              GIT
+              <img src={gitIcon} alt="git icon" />
               <div class="hex"></div>
             </div>
           </div>
           <div class="hex-col3">
             <div class="item6">
-              JAVASCRIPT
+              <img src={jsIcon} alt="javascript icon" />
               <div class="hex"></div>
             </div>
             <div class="item7">
-              SQL
+              <img src={sqlIcon} alt="sql icon" />
               <div class="hex"></div>
             </div>
           </div>

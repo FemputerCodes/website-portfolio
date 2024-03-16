@@ -36,9 +36,9 @@
   font-size: 16px;
 }
 
-.hex-col1,
-.hex-col2,
-.hex-col3 {
+img {
+  width: 110px;
+  object-fit: "cover";
 }
 
 .item1,
