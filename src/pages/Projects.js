@@ -11,10 +11,10 @@ function Projects() {
       </h1>
       <div class="projects-content-box">
         <h2>Sudoku</h2>
-        <div>
-          <a href="https://femputercodes.github.io/sudoku/build/web/">PLAY</a>
+        <div className="live-play">
+          <a href="https://femputercodes.itch.io/sudoku">PLAY</a>
         </div>
-        <div>
+        <div className="learn-more">
           <a href="https://github.com/FemputerCodes/sudoku">Learn More</a>
         </div>
         <p>

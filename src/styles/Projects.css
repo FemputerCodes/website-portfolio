@@ -31,4 +31,8 @@
   .projects-content-box p {
     font-size: 0.6em;
   }
+
+  .live-play {
+    display: none;
+  }
 }
