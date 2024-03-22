@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   height: auto;
-  padding: 30px;
   margin-left: 50px;
   margin-right: 50px;
+  padding: 0;
+  padding-top: 30px;
 }
 
 #about h1 {
@@ -25,113 +26,91 @@
 .about-content {
   font-size: 0.8em;
   position: relative;
-  width: 60%;
+  width: 50%;
   height: 100%;
 }
 
-.hexagon-grid {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  font-size: 16px;
-}
-
-img {
-  width: 60%;
-  object-fit: "cover";
-}
-
-.item1,
-.item2,
-.item3,
-.item4,
-.item5,
-.item6,
-.item7,
-.item8,
-.item9 {
-  color: white;
-  /* border: 2px solid white; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hexagon-content {
   position: relative;
-  width: 180px;
-  height: 180px;
-  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 50%;
+  height: 100%;
 }
 
-.hex {
-  position: absolute;
+.hexagon {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.hexagon-cell {
   background: blueviolet;
-  border-radius: 3px;
+  max-width: 100px;
+  /* max-height: 55px; */
   width: 85%;
   height: var(--height);
+  margin-top: 25px;
+  margin-right: 12.5px;
+  margin-left: 12.5px;
+  margin-bottom: 25px;
+  position: relative;
+  text-align: center;
   z-index: -1;
-  transform: rotate(60deg);
 }
 
-.hex::before,
-.hex::after {
-  background: inherit;
-  border-radius: inherit;
+.hexagon-cell::before,
+.hexagon-cell::after {
+  background: blueviolet;
   content: "";
-  position: absolute;
+  top: -50%;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 200%;
+  display: block;
+  position: absolute;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  z-index: -1;
 }
 
-.hex::before {
-  transform: rotate(60deg);
+.hexagon-cell::before {
+  transform: scale(1.055);
 }
 
-.hex::after {
-  transform: rotate(-60deg);
+.hexagon-cell-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
 }
 
-.item1:hover,
-.item2:hover,
-.item3:hover,
-.item4:hover,
-.item5:hover,
-.item6:hover,
-.item7:hover,
-.item8:hover,
-.item9:hover {
-  .hex,
-  .hex::before,
-  .hex::after {
-    background: #41166d;
-  }
+/* Adjust margins for hexagon cells */
+.hexagon-cell:nth-child(1) {
+  margin-left: calc((100% - 2 * var(--width) - 25px) / 2);
+}
+.hexagon-cell:nth-child(2) {
+  margin-right: calc((100% - 2 * var(--width) - 25px) / 2);
+}
+.hexagon-cell:nth-child(3) {
+  margin-left: calc((100% - 3 * var(--width) - 2 * 25px) / 2);
+}
+.hexagon-cell:nth-child(5) {
+  margin-right: calc((100% - 3 * var(--width) - 2 * 25px) / 2);
+}
+.hexagon-cell:nth-child(6) {
+  margin-left: calc((100% - 2 * var(--width) - 25px) / 2);
+}
+.hexagon-cell:nth-child(7) {
+  margin-right: calc((100% - 2 * var(--width) - 25px) / 2);
 }
 
-@media (max-width: 1346px) and (min-width: 801px) {
-  .about-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-content {
-    font-size: 0.6em;
-    width: 100%;
-  }
-
-  .hexagon-grid {
-    width: 50%;
-  }
-}
-
+/******** Responsiveness *******/
 @media (max-width: 800px) {
-  #about {
-    padding: 0;
-    top: 0;
-    margin: 20px;
-  }
-
-  #about h1 {
-    font-size: 0.8em;
-  }
-
   .about-container {
     display: flex;
     flex-direction: column;
@@ -140,21 +119,10 @@ img {
   .about-content {
     font-size: 0.6em;
     width: 100%;
-  }
-  .hexagon-grid {
-    font-size: 0.4em;
+    gap: 0;
   }
 
-  .item1,
-  .item2,
-  .item3,
-  .item4,
-  .item5,
-  .item6,
-  .item7,
-  .item8,
-  .item9 {
-    width: 80px;
-    height: 80px;
+  .hexagon-content {
+    width: 100%;
   }
 }

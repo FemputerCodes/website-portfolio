@@ -14,12 +14,13 @@ function About() {
       console.log("update hexagon function");
       const width = hexagon.clientWidth;
       const height = width * 0.5769;
+      hexagon.style.setProperty("--width", `${width}px`);
       hexagon.style.setProperty("--height", `${height}px`);
       console.log("hexagon width: ", width);
       console.log("hexagon height: ", height);
     }
     function handleResize() {
-      document.querySelectorAll(".hex").forEach(updateHexagon);
+      document.querySelectorAll(".hexagon-cell").forEach(updateHexagon);
     }
 
     handleResize();
@@ -29,7 +30,6 @@ function About() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
   return (
     <div id="about">
       <h1>
@@ -56,46 +56,37 @@ function About() {
             queso.
           </p>
         </div>
-        <div class="hexagon-grid">
-          <div class="hex-col1">
-            <div class="item1">
-              <img src={htmlIcon} alt="html icon" />
-              <div class="hex"></div>
-            </div>
-            <div class="item2">
-              <img src={cppIcon} alt="cpp icon" />
-              <div class="hex"></div>
-            </div>
-          </div>
-          <div class="hex-col2">
-            <div class="item3">
-              <img
-                src={pythonIcon}
-                width="110"
-                style={{ objectFit: "cover" }}
-                alt="python icon"
-              />
-              <div class="hex"></div>
-            </div>
-            <div class="item4">
-              <img src={cssIcon} alt="css icon" />
-              <div class="hex"></div>
-            </div>
-            <div class="item5">
-              <img src={gitIcon} alt="git icon" />
-              <div class="hex"></div>
-            </div>
-          </div>
-          <div class="hex-col3">
-            <div class="item6">
-              <img src={jsIcon} alt="javascript icon" />
-              <div class="hex"></div>
-            </div>
-            <div class="item7">
-              <img src={sqlIcon} alt="sql icon" />
-              <div class="hex"></div>
-            </div>
-          </div>
+        <div class="hexagon-content">
+          <ul class="hexagon">
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={pythonIcon} alt="python icon" /> */}
+              <div class="hexagon-cell-title">PYTHON</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={htmlIcon} alt="html icon" /> */}
+              <div class="hexagon-cell-title">HTML</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={cssIcon} alt="css icon" /> */}
+              <div class="hexagon-cell-title">CSS</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={jsIcon} alt="js icon" /> */}
+              <div class="hexagon-cell-title">JAVASCRIPT</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={cppIcon} alt="c++ icon" /> */}
+              <div class="hexagon-cell-title">C++</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={gitIcon} alt="git icon" /> */}
+              <div class="hexagon-cell-title">GIT</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={sqlIcon} alt="sql icon" /> */}
+              <div class="hexagon-cell-title">SQL</div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
