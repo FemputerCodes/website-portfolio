@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.832727de.css",
+    "main.js": "/static/js/main.e06e1b32.js",
+    "static/js/453.f13df33c.chunk.js": "/static/js/453.f13df33c.chunk.js",
+    "static/media/CaveEntrance_Long.png": "/static/media/CaveEntrance_Long.1e738327ad002157af00.png",
+    "static/media/Stars.png": "/static/media/Stars.bac7a2facee9a46653fc.png",
+    "static/media/css_icon.png": "/static/media/css_icon.e3fa451b0308a911e62f.png",
+    "static/media/html_icon.png": "/static/media/html_icon.c4f230208cd17e7481a6.png",
+    "static/media/python_icon.png": "/static/media/python_icon.2f5796065b9ce6404e77.png",
+    "static/media/sql_icon.png": "/static/media/sql_icon.6777d4c960bb822e6c72.png",
+    "static/media/git_icon.png": "/static/media/git_icon.27bb0905709caa32ab4b.png",
+    "static/media/js_icon.png": "/static/media/js_icon.e8aee4eea3ef322e0100.png",
+    "static/media/c++_icon.png": "/static/media/c++_icon.736e4bcc06a678c0bd85.png",
+    "index.html": "/index.html",
+    "main.832727de.css.map": "/static/css/main.832727de.css.map",
+    "main.e06e1b32.js.map": "/static/js/main.e06e1b32.js.map",
+    "453.f13df33c.chunk.js.map": "/static/js/453.f13df33c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.832727de.css",
+    "static/js/main.e06e1b32.js"
+  ]
+}
