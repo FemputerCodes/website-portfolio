@@ -3,8 +3,8 @@
   flex-direction: column;
   height: auto;
   padding-top: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #projects h1 {
@@ -14,25 +14,29 @@
 }
 
 .projects-content-box p {
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
-@media (max-width: 600px) {
+.live-play {
+  display: none;
+}
+
+@media (min-width: 600px) {
   #projects {
-    padding: 0;
-    top: 0;
-    margin: 20px;
+    padding-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   #projects h1 {
-    font-size: 0.8em;
+    font-size: 1.6em;
   }
 
   .projects-content-box p {
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
 
   .live-play {
-    display: none;
+    display: flex;
   }
 }

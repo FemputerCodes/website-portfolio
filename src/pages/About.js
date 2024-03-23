@@ -56,38 +56,36 @@ function About() {
             queso.
           </p>
         </div>
-        <div class="hexagon-content">
-          <ul class="hexagon">
-            <li class="hexagon-cell">
-              {/* <img class="hexagon-cell-img" src={pythonIcon} alt="python icon" /> */}
-              <div class="hexagon-cell-title">PYTHON</div>
-            </li>
-            <li class="hexagon-cell">
-              {/* <img class="hexagon-cell-img" src={htmlIcon} alt="html icon" /> */}
-              <div class="hexagon-cell-title">HTML</div>
-            </li>
-            <li class="hexagon-cell">
-              {/* <img class="hexagon-cell-img" src={cssIcon} alt="css icon" /> */}
-              <div class="hexagon-cell-title">CSS</div>
-            </li>
-            <li class="hexagon-cell">
-              {/* <img class="hexagon-cell-img" src={jsIcon} alt="js icon" /> */}
-              <div class="hexagon-cell-title">JAVASCRIPT</div>
-            </li>
-            <li class="hexagon-cell">
-              {/* <img class="hexagon-cell-img" src={cppIcon} alt="c++ icon" /> */}
-              <div class="hexagon-cell-title">C++</div>
-            </li>
-            <li class="hexagon-cell">
-              {/* <img class="hexagon-cell-img" src={gitIcon} alt="git icon" /> */}
-              <div class="hexagon-cell-title">GIT</div>
-            </li>
-            <li class="hexagon-cell">
-              {/* <img class="hexagon-cell-img" src={sqlIcon} alt="sql icon" /> */}
-              <div class="hexagon-cell-title">SQL</div>
-            </li>
-          </ul>
-        </div>
+        <ul class="hexagon">
+          <li class="hexagon-cell">
+            {/* <img class="hexagon-cell-img" src={pythonIcon} alt="python icon" /> */}
+            <div class="hexagon-cell-title">PYTHON</div>
+          </li>
+          <li class="hexagon-cell">
+            {/* <img class="hexagon-cell-img" src={htmlIcon} alt="html icon" /> */}
+            <div class="hexagon-cell-title">HTML</div>
+          </li>
+          <li class="hexagon-cell">
+            {/* <img class="hexagon-cell-img" src={cssIcon} alt="css icon" /> */}
+            <div class="hexagon-cell-title">CSS</div>
+          </li>
+          <li class="hexagon-cell">
+            {/* <img class="hexagon-cell-img" src={jsIcon} alt="js icon" /> */}
+            <div class="hexagon-cell-title">JAVASCRIPT</div>
+          </li>
+          <li class="hexagon-cell">
+            {/* <img class="hexagon-cell-img" src={cppIcon} alt="c++ icon" /> */}
+            <div class="hexagon-cell-title">C++</div>
+          </li>
+          <li class="hexagon-cell">
+            {/* <img class="hexagon-cell-img" src={gitIcon} alt="git icon" /> */}
+            <div class="hexagon-cell-title">GIT</div>
+          </li>
+          <li class="hexagon-cell">
+            {/* <img class="hexagon-cell-img" src={sqlIcon} alt="sql icon" /> */}
+            <div class="hexagon-cell-title">SQL</div>
+          </li>
+        </ul>
       </div>
     </div>
   );

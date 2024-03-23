@@ -1,5 +1,6 @@
 .chatbot-button {
   position: fixed;
+  display: none;
   bottom: 0px;
   left: 0px;
   background-color: transparent;
@@ -34,8 +35,8 @@ iframe#close {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .chatbot-button {
-    display: none;
+    display: flex;
   }
 }
