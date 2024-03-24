@@ -37,7 +37,7 @@ function Home() {
       <div className="title-container">
         <h1 id="title" ref={refTitle}>
           Hello! I'm{" "}
-          <span style={{ color: "var(--blueviolet)", fontWeight: "500" }}>
+          <span style={{ color: "var(--lightblueviolet)", fontWeight: "500" }}>
             Meghan
           </span>
           .<br />

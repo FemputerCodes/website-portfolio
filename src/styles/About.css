@@ -39,7 +39,7 @@
 }
 
 .hexagon-cell {
-  background: blueviolet;
+  background: var(--blueviolet);
   max-width: 100px;
   width: 100%;
   height: var(--height);
@@ -49,13 +49,34 @@
   margin-bottom: 25px;
   position: relative;
   text-align: center;
-  z-index: -1;
+  z-index: 1;
+}
+
+.hexagon-cell-img {
+  background: var(--darkgray);
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+}
+
+.hexagon-cell-title {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  transform: translate(0%, 100%);
 }
 
 .hexagon-cell::before,
 .hexagon-cell::after {
-  background: blueviolet;
   content: "";
+}
+
+.hexagon-cell::before,
+.hexagon-cell::after,
+.hexagon-cell-img {
   top: -50%;
   left: 0;
   width: 100%;
@@ -68,13 +89,17 @@
 
 .hexagon-cell::before {
   transform: scale(1.055);
+  background: var(--blueviolet);
 }
 
-.hexagon-cell-title {
+.hexagon-cell:hover::before {
+  background: var(--blueviolet);
+}
+.hexagon-cell:hover .hexagon-cell-img {
+  opacity: 10%;
+}
+.hexagon-cell:hover .hexagon-cell-title {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 14px;
 }
 
 /******** Responsiveness *******/

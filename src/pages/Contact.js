@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div id="contact">
       <h1>
-        <span style={{ color: "var(--blueviolet)", fontWeight: "500" }}>
+        <span style={{ color: "var(--lightblueviolet)", fontWeight: "500" }}>
           Contact
         </span>
       </h1>

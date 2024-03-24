@@ -1,5 +1,5 @@
 .form-container {
-  border: 1px solid var(--blueviolet);
+  border: 1px solid var(--lightblueviolet);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
@@ -34,7 +34,7 @@ form textarea::placeholder {
 
 form .submit {
   color: var(--darkgray);
-  background-color: var(--blueviolet);
+  background-color: var(--lightblueviolet);
   font-size: 18px;
   font-weight: bold;
   border-radius: 5px;

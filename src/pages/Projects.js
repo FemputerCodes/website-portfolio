@@ -5,7 +5,7 @@ function Projects() {
   return (
     <div id="projects">
       <h1>
-        <span style={{ color: "var(--blueviolet)", fontWeight: "500" }}>
+        <span style={{ color: "var(--lightblueviolet)", fontWeight: "500" }}>
           Projects
         </span>
       </h1>

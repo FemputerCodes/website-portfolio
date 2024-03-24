@@ -4,7 +4,9 @@
   --white: #fff5ee;
   --darkgray: #262626;
   --lightgray: #a3a3c2;
-  --blueviolet: #aa80ff;
+  --blueviolet: blueviolet;
+  --lightblueviolet: #aa80ff;
+  --darkblueviolet: #4b197c;
   --font-weight: 350;
   --font-family: "Montserrat", sans-serif;
   --font-size: 26px;
