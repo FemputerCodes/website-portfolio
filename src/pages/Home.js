@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
-import caveEntrance from "../assets/CaveEntrance_Long.png";
-import stars from "../assets/Stars.png";
+import caveEntrance from "../assets/parallax/CaveEntrance.png";
+import stars from "../assets/parallax/Stars.png";
 import "../styles/Home.css";
 
 function Home() {

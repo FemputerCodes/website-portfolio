@@ -13,15 +13,34 @@
   margin-bottom: 5px;
 }
 
-.projects-content-box p {
-  font-size: 0.6em;
+.projects-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
 }
 
+.projects-img {
+  display: none;
+  border-radius: 25px;
+}
+
+.projects-content {
+  position: relative;
+  width: 100%;
+}
+
+.projects-content p {
+  font-size: 0.6em;
+}
 .live-play {
   display: none;
 }
 
-@media (min-width: 600px) {
+/******** Responsiveness *******/
+@media (min-width: 850px) {
   #projects {
     padding-top: 30px;
     margin-left: 50px;
@@ -32,7 +51,22 @@
     font-size: 1.6em;
   }
 
-  .projects-content-box p {
+  .projects-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .projects-img {
+    display: flex;
+  }
+
+  .projects-img,
+  .projects-content {
+    width: 50%;
+  }
+
+  .projects-content p {
     font-size: 0.8em;
   }
 
