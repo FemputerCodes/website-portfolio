@@ -10,17 +10,63 @@ import "../styles/About.css";
 
 function About() {
   useEffect(() => {
-    function updateHexagon(hexagon) {
+    function updateHexagonCell(hexagonCell) {
       console.log("update hexagon function");
-      const width = hexagon.clientWidth;
+      const width = hexagonCell.clientWidth;
       const height = width * 0.5769;
-      hexagon.style.setProperty("--width", `${width}px`);
-      hexagon.style.setProperty("--height", `${height}px`);
+      hexagonCell.style.setProperty("--width", `${width}px`);
+      hexagonCell.style.setProperty("--height", `${height}px`);
       console.log("hexagon width: ", width);
       console.log("hexagon height: ", height);
     }
     function handleResize() {
-      document.querySelectorAll(".hexagon-cell").forEach(updateHexagon);
+      document.querySelectorAll(".hexagon-cell").forEach(updateHexagonCell);
+
+      /* Adjust margins for hexagon cells */
+      /* (screenWidth - (numHex * hexWidth) - ((numHex - 1) * spaceBetween)) / numMargins */
+      const hexagonCell1 = document.querySelector(".hexagon-cell:nth-child(1)");
+      const hexagonCell2 = document.querySelector(".hexagon-cell:nth-child(2)");
+      const hexagonCell3 = document.querySelector(".hexagon-cell:nth-child(3)");
+      const hexagonCell5 = document.querySelector(".hexagon-cell:nth-child(5)");
+      const hexagonCell6 = document.querySelector(".hexagon-cell:nth-child(6)");
+      const hexagonCell7 = document.querySelector(".hexagon-cell:nth-child(7)");
+
+      let hexagonCellMargin1 = `calc((100% - (2 * var(--width)) - 25px) / 2)`;
+      hexagonCell1.style.marginLeft = hexagonCellMargin1;
+      let hexagonCellMargin2 = `calc((100% - (2 * var(--width)) - 25px) / 2)`;
+      hexagonCell2.style.marginRight = hexagonCellMargin2;
+      let hexagonCellMargin3 = `calc((100% - (3 * var(--width)) - (2 * 25px)) / 2)`;
+      hexagonCell3.style.marginLeft = hexagonCellMargin3;
+      let hexagonCellMargin5 = `calc((100% - (3 * var(--width)) - (2 * 25px)) / 2)`;
+      hexagonCell5.style.marginRight = hexagonCellMargin5;
+      let hexagonCellMargin6 = `calc((100% - (2 * var(--width)) - 25px) / 2)`;
+      hexagonCell6.style.marginLeft = hexagonCellMargin6;
+      let hexagonCellMargin7 = `calc((100% - (2 * var(--width)) - 25px) / 2)`;
+      hexagonCell7.style.marginRight = hexagonCellMargin7;
+      console.log(
+        "hexagonCell1 margin left: ",
+        getComputedStyle(hexagonCell1).marginLeft
+      );
+      console.log(
+        "hexagonCell2 margin right: ",
+        getComputedStyle(hexagonCell2).marginRight
+      );
+      console.log(
+        "hexagonCell3 margin left: ",
+        getComputedStyle(hexagonCell3).marginLeft
+      );
+      console.log(
+        "hexagonCell5 margin right: ",
+        getComputedStyle(hexagonCell5).marginRight
+      );
+      console.log(
+        "hexagonCell6 margin left: ",
+        getComputedStyle(hexagonCell6).marginLeft
+      );
+      console.log(
+        "hexagonCell7 margin right: ",
+        getComputedStyle(hexagonCell7).marginRight
+      );
     }
 
     handleResize();
@@ -56,36 +102,38 @@ function About() {
             queso.
           </p>
         </div>
-        <ul class="hexagon">
-          <li class="hexagon-cell">
-            {/* <img class="hexagon-cell-img" src={pythonIcon} alt="python icon" /> */}
-            <div class="hexagon-cell-title">PYTHON</div>
-          </li>
-          <li class="hexagon-cell">
-            {/* <img class="hexagon-cell-img" src={htmlIcon} alt="html icon" /> */}
-            <div class="hexagon-cell-title">HTML</div>
-          </li>
-          <li class="hexagon-cell">
-            {/* <img class="hexagon-cell-img" src={cssIcon} alt="css icon" /> */}
-            <div class="hexagon-cell-title">CSS</div>
-          </li>
-          <li class="hexagon-cell">
-            {/* <img class="hexagon-cell-img" src={jsIcon} alt="js icon" /> */}
-            <div class="hexagon-cell-title">JAVASCRIPT</div>
-          </li>
-          <li class="hexagon-cell">
-            {/* <img class="hexagon-cell-img" src={cppIcon} alt="c++ icon" /> */}
-            <div class="hexagon-cell-title">C++</div>
-          </li>
-          <li class="hexagon-cell">
-            {/* <img class="hexagon-cell-img" src={gitIcon} alt="git icon" /> */}
-            <div class="hexagon-cell-title">GIT</div>
-          </li>
-          <li class="hexagon-cell">
-            {/* <img class="hexagon-cell-img" src={sqlIcon} alt="sql icon" /> */}
-            <div class="hexagon-cell-title">SQL</div>
-          </li>
-        </ul>
+        <div class="hexagon-content">
+          <ul class="hexagon">
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={pythonIcon} alt="python icon" /> */}
+              <div class="hexagon-cell-title">PYTHON</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={htmlIcon} alt="html icon" /> */}
+              <div class="hexagon-cell-title">HTML</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={cssIcon} alt="css icon" /> */}
+              <div class="hexagon-cell-title">CSS</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={jsIcon} alt="js icon" /> */}
+              <div class="hexagon-cell-title">JAVASCRIPT</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={cppIcon} alt="c++ icon" /> */}
+              <div class="hexagon-cell-title">C++</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={gitIcon} alt="git icon" /> */}
+              <div class="hexagon-cell-title">GIT</div>
+            </li>
+            <li class="hexagon-cell">
+              {/* <img class="hexagon-cell-img" src={sqlIcon} alt="sql icon" /> */}
+              <div class="hexagon-cell-title">SQL</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

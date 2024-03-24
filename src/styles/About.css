@@ -21,7 +21,8 @@
   height: 100%;
 }
 
-.about-content {
+.about-content,
+.hexagon-content {
   font-size: 0.6em;
   position: relative;
   width: 100%;
@@ -76,42 +77,33 @@
   font-size: 14px;
 }
 
-/* Adjust margins for hexagon cells */
-/* (screenWidth - numHex * hexWidth - ((numHex - 1) * spaceBetween)) / numHex - 1*/
-.hexagon-cell:nth-child(1) {
-  margin-left: calc((100% - 2 * var(--width) - 25px) / 2);
-}
-.hexagon-cell:nth-child(2) {
-  margin-right: calc((100% - 2 * var(--width) - 25px) / 2);
-}
-.hexagon-cell:nth-child(3) {
-  margin-left: calc((100% - 3 * var(--width) - (2 * 25px)) / 2);
-}
-.hexagon-cell:nth-child(5) {
-  margin-right: calc((100% - 3 * var(--width) - (2 * 25px)) / 2);
-}
-.hexagon-cell:nth-child(6) {
-  margin-left: calc((100% - 2 * var(--width) - 25px) / 2);
-}
-.hexagon-cell:nth-child(7) {
-  margin-right: calc((100% - 2 * var(--width) - 25px) / 2);
-}
-
 /******** Responsiveness *******/
-@media (min-width: 800px) {
+@media (min-width: 600px) {
+  .about-content,
+  .hexagon-content {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 965px) {
+  #about {
+    padding-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
   .about-container {
     display: flex;
     flex-direction: row;
     gap: 50px;
   }
 
-  .about-content {
-    font-size: 0.8em;
+  .about-content,
+  .hexagon-content {
     width: 50%;
     height: 100%;
   }
 
   .hexagon {
-    width: 50%;
+    width: 100%;
   }
 }
