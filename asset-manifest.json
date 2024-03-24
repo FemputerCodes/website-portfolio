@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.832727de.css",
-    "main.js": "/static/js/main.e06e1b32.js",
+    "main.css": "/static/css/main.0d254e8c.css",
+    "main.js": "/static/js/main.1ea81ade.js",
     "static/js/453.f13df33c.chunk.js": "/static/js/453.f13df33c.chunk.js",
     "static/media/CaveEntrance_Long.png": "/static/media/CaveEntrance_Long.1e738327ad002157af00.png",
     "static/media/Stars.png": "/static/media/Stars.bac7a2facee9a46653fc.png",
@@ -13,12 +13,12 @@
     "static/media/js_icon.png": "/static/media/js_icon.e8aee4eea3ef322e0100.png",
     "static/media/c++_icon.png": "/static/media/c++_icon.736e4bcc06a678c0bd85.png",
     "index.html": "/index.html",
-    "main.832727de.css.map": "/static/css/main.832727de.css.map",
-    "main.e06e1b32.js.map": "/static/js/main.e06e1b32.js.map",
+    "main.0d254e8c.css.map": "/static/css/main.0d254e8c.css.map",
+    "main.1ea81ade.js.map": "/static/js/main.1ea81ade.js.map",
     "453.f13df33c.chunk.js.map": "/static/js/453.f13df33c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.832727de.css",
-    "static/js/main.e06e1b32.js"
+    "static/css/main.0d254e8c.css",
+    "static/js/main.1ea81ade.js"
   ]
 }
