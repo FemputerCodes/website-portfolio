@@ -86,8 +86,16 @@ function About() {
       <div class="about-container">
         <div class="about-content">
           <p>
-            An aspiring developer gradutating soon with a Bachelor of Science in
-            Computer Science. I enjoy learning new technologies.
+            An aspiring developer graduating soon with a Bachelor of Science in
+            Computer Science with experience in developing, testing, and debugging code.
+            I'm a quick learner and adaptable to new technologies and frameworks. I enjoy
+            both collaborative and self-directed working environments, with the ability to
+            communicate and problem-solve.
+          </p>
+          <p>
+            Outside of coding, I enjoy working on personal programming projects, bouldering
+            outdoors or at my local gym, spending time with family and friends, traveling,
+            and camping.
           </p>
         </div>
         <div class="hexagon-content">
