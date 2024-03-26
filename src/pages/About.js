@@ -117,7 +117,7 @@ function About() {
             </li>
             <li class="hexagon-cell">
               <img class="hexagon-cell-img" src={jsIcon} alt="js icon" />
-              <div class="hexagon-cell-title">JAVASCRIPT</div>
+              <div class="hexagon-cell-title" style={{fontSize: "12px"}}>JAVASCRIPT</div>
             </li>
             <li class="hexagon-cell">
               <img class="hexagon-cell-img" src={cppIcon} alt="c++ icon" />
