@@ -26,7 +26,7 @@ function Projects() {
             <a href="https://github.com/FemputerCodes/sudoku">Learn More</a>
           </div>
           <p>
-            Implemented in Python using Pygame. Deployed to the web with Pygbag.
+            Implemented using Python and Pygame for the GUI. Deployed to the web using Pygbag.
           </p>
         </div>
       </div>
