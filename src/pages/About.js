@@ -21,7 +21,6 @@ function About() {
     }
     function handleResize() {
       document.querySelectorAll(".hexagon-cell").forEach(updateHexagonCell);
-
       /* Adjust margins for hexagon cells */
       /* (screenWidth - (numHex * hexWidth) - ((numHex - 1) * spaceBetween)) / numMargins */
       const hexagonCell1 = document.querySelector(".hexagon-cell:nth-child(1)");
@@ -30,7 +29,7 @@ function About() {
       const hexagonCell5 = document.querySelector(".hexagon-cell:nth-child(5)");
       const hexagonCell6 = document.querySelector(".hexagon-cell:nth-child(6)");
       const hexagonCell7 = document.querySelector(".hexagon-cell:nth-child(7)");
-
+      
       let hexagonCellMargin1 = `calc((100% - (2 * var(--width)) - 25px) / 2)`;
       hexagonCell1.style.marginLeft = hexagonCellMargin1;
       let hexagonCellMargin2 = `calc((100% - (2 * var(--width)) - 25px) / 2)`;

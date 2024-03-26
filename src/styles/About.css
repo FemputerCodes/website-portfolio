@@ -40,7 +40,7 @@
 
 .hexagon-cell {
   background: var(--blueviolet);
-  max-width: 100px;
+  max-width: 80px;
   width: 100%;
   height: var(--height);
   margin-top: 25px;
@@ -102,18 +102,25 @@
   display: flex;
 }
 
-/******** Responsiveness *******/
-@media (min-width: 600px) {
+/**************** Responsiveness ****************/
+/* styles for small devices (e.g., smartphones in landscape, small tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
   .about-content,
   .hexagon-content {
     font-size: 0.8em;
   }
+
+  .hexagon-cell {
+    max-width: 100px;
+  }
 }
-@media (min-width: 965px) {
+
+/* styles for medium devices (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
   #about {
     padding-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .about-container {
@@ -124,11 +131,76 @@
 
   .about-content,
   .hexagon-content {
+    font-size: 0.8em;
     width: 50%;
     height: 100%;
   }
 
   .hexagon {
     width: 100%;
+  }
+
+  .hexagon-cell {
+    max-width: 100px;
+  }
+}
+
+/* styles for large devices (e.g., desktops, laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #about {
+    padding-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .about-content,
+  .hexagon-content {
+    font-size: 0.8em;
+    width: 50%;
+    height: 100%;
+  }
+
+  .hexagon {
+    width: 100%;
+  }
+
+  .hexagon-cell {
+    max-width: 100px;
+  }
+}
+
+/* styles for extra large devices (e.g., large desktops, wide screens) */
+@media (min-width: 1200px) {
+  #about {
+    padding-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .about-content,
+  .hexagon-content {
+    font-size: 0.8em;
+    width: 50%;
+    height: 100%;
+  }
+
+  .hexagon {
+    width: 100%;
+  }
+
+  .hexagon-cell {
+    max-width: 100px;
   }
 }
