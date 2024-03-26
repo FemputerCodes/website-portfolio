@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bae57c0f.css",
+    "main.css": "/static/css/main.b80a266e.css",
     "main.js": "/static/js/main.ab7f9070.js",
     "static/js/453.f13df33c.chunk.js": "/static/js/453.f13df33c.chunk.js",
     "static/media/CaveEntrance.png": "/static/media/CaveEntrance.1e738327ad002157af00.png",
@@ -14,12 +14,12 @@
     "static/media/git_icon.png": "/static/media/git_icon.a68bf5bf76f324bfdc8b.png",
     "static/media/python_sudoku.png": "/static/media/python_sudoku.6a8029adc01de9a3d10a.png",
     "index.html": "/index.html",
-    "main.bae57c0f.css.map": "/static/css/main.bae57c0f.css.map",
+    "main.b80a266e.css.map": "/static/css/main.b80a266e.css.map",
     "main.ab7f9070.js.map": "/static/js/main.ab7f9070.js.map",
     "453.f13df33c.chunk.js.map": "/static/js/453.f13df33c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bae57c0f.css",
+    "static/css/main.b80a266e.css",
     "static/js/main.ab7f9070.js"
   ]
 }
