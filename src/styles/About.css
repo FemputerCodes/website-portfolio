@@ -131,7 +131,7 @@
 
   .about-content,
   .hexagon-content {
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
     width: 50%;
     height: 100%;
   }
