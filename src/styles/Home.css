@@ -63,7 +63,36 @@
   z-index: 0;
 }
 
-@media (min-width: 600px) {
+/**************** Responsiveness ****************/
+/* styles for small devices (e.g., smartphones in landscape, small tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* styles for medium devices (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  #home .title-container {
+    margin: 15px;
+  }
+
+  #home .title-container #title {
+    font-size: 1.8em;
+  }
+}
+
+/* styles for large devices (e.g., desktops, laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #home .title-container {
+    margin: 15px;
+  }
+
+  #home .title-container #title {
+    font-size: 1.8em;
+  }
+}
+
+/* styles for extra large devices (e.g., large desktops, wide screens) */
+@media (min-width: 1200px) {
   #home .title-container {
     margin: 15px;
   }
