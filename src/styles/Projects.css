@@ -23,8 +23,12 @@
 }
 
 .projects-img {
-  display: none;
-  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
 }
 
 .projects-content {
@@ -40,11 +44,11 @@
 }
 
 /******** Responsiveness *******/
-@media (min-width: 850px) {
+@media (min-width: 965px) {
   #projects {
     padding-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   #projects h1 {

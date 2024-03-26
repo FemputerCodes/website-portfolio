@@ -86,20 +86,8 @@ function About() {
       <div class="about-container">
         <div class="about-content">
           <p>
-            Fromage frais cheddar the big cheese. Chalk and cheese fondue
-            dolcelatte feta ricotta port-salut airedale edam. Taleggio smelly
-            cheese cow croque monsieur bocconcini ricotta roquefort cow.
-            Cheesecake stilton red leicester cut the cheese cheesecake
-            mozzarella goat cheesy grin. Squirty cheese hard cheese bocconcini
-            queso.
-          </p>
-          <p>
-            Fromage frais cheddar the big cheese. Chalk and cheese fondue
-            dolcelatte feta ricotta port-salut airedale edam. Taleggio smelly
-            cheese cow croque monsieur bocconcini ricotta roquefort cow.
-            Cheesecake stilton red leicester cut the cheese cheesecake
-            mozzarella goat cheesy grin. Squirty cheese hard cheese bocconcini
-            queso.
+            An aspiring developer gradutating soon with a Bachelor of Science in
+            Computer Science. I enjoy learning new technologies.
           </p>
         </div>
         <div class="hexagon-content">
